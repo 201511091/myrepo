@@ -1,0 +1,5 @@
+﻿@startuml
+class Car
+class Driver
+Driver - Car
+@enduml
