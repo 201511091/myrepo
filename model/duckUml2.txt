@@ -1,9 +1,16 @@
 ﻿@startuml
 Duck <|-- MallardDuck
 Duck <|-- ModelDuck
+Duck <|-- DecoyDuck
+Duck <|-- RedHeadDuck
+Duck <|-- RubberDuck
 FlyBehavior <|.. FlyWithWings
 FlyBehavior <|.. FlyRocketPowered
+FlyBehavior <|.. FlyNoWay
 QuackBehavior <|.. Quack
+QuackBehavior <|.. MuteQuack
+QuackBehavior <|.. FakeQuack
+QuackBehavior <|.. Squeak
 Duck -> FlyBehavior
 Duck -> QuackBehavior
 abstract class Duck {
@@ -20,6 +27,42 @@ Interface QuackBehavior {
     +quack()
 }
 Interface FlyBehavior {
+    +fly()
+}
+class ModelDuck {
+    +display()
+}
+class ModelDuck {
+    +display()
+}
+class DecoyDuck {
+    +display()
+}
+class RedHeadDuck {
+    +display()
+}
+class RubberDuck {
+    +display()
+}
+class Quack {
+    +quack()
+}
+class MuteQuack {
+    +quack()
+}
+class FakeQuack {
+    +quack()
+}
+class Squeak {
+    +quack()
+}
+class FlyWithWings {
+    +fly()
+}
+class FlyRocketPowered {
+    +fly()
+}
+class FlyNoWay {
     +fly()
 }
 @enduml 
