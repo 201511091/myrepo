@@ -1,0 +1,20 @@
+﻿@startuml
+MiniDuckSimulator1 -> MallardDuck:mallard=new()
+MiniDuckSimulator1 -> MallardDuck:mallard.performQuack()
+MiniDuckSimulator1 -> MallardDuck:mallard.performFly()
+note right
+    use quack() of Interface QuackBehavior
+    use fly() of Interface FlyBehavior
+end note
+
+MiniDuckSimulator1 -> ModelDuck:model:new()
+MiniDuckSimulator1 -> ModelDuck:model.performFly();
+MiniDuckSimulator1 -> FlyRocketPowered:frp=new()
+MiniDuckSimulator1 -> ModelDuck:model.setFlyBehavior(frp);
+MiniDuckSimulator1 -> ModelDuck:model.performFly();
+note right
+    use quack() of Interface QuackBehavior
+    setFlyBehavior() with Class FlyRocketPowered
+end note
+
+@enduml

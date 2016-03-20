@@ -1,0 +1,23 @@
+﻿Eunho@Eunho-PC MINGW64 ~
+$ cd Documents/
+
+Eunho@Eunho-PC MINGW64 ~/Documents
+$ cd GitHub/
+
+Eunho@Eunho-PC MINGW64 ~/Documents/GitHub
+$ cd myrepo/
+
+Eunho@Eunho-PC MINGW64 ~/Documents/GitHub/myrepo (master)
+$ java -cp classes/ headfirst.strategy.MiniDuckSimulator
+Quack
+Squeak
+<< Silence >>
+I can't fly
+I'm flying with a rocket
+
+Eunho@Eunho-PC MINGW64 ~/Documents/GitHub/myrepo (master)
+$ java -cp classes/ headfirst.strategy.MiniDuckSimulator1
+Quack
+I'm flying!!
+I can't fly
+I'm flying with a rocket
