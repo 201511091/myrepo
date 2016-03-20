@@ -29,7 +29,7 @@ Interface QuackBehavior {
 Interface FlyBehavior {
     +fly()
 }
-class ModelDuck {
+class MallardDuck {
     +display()
 }
 class ModelDuck {
