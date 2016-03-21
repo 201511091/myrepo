@@ -1,10 +1,10 @@
-﻿SRP (Single Responsibility Principle): 어떤 (구현)클래스 혹은 모듈이 목적에 따른 구분이 필요한 경우, 반드시 그 목적에 맞게 구분하여 만들어줘야하는 것.
+﻿SRP (Single Responsibility Principle): 어떤 (구현)클래스 혹은 모듈이 목적에 따른 구분이 필요한 경우, 반드시 그 목적에 맞게 구분하여 만들어줘야하는 것. 결합성(Coupling) 응집성(Cohesion)
 
-OCP (Open Close Prnciple): 클래스 혹은 모듈의 확장을 하되, 기존의 것이 수정이 안되도록 만드는 것.
+OCP (Open Close Prnciple): 클래스 혹은 모듈의 확장을 하되, 기존의 것이 수정이 안되도록 만드는 것. 계층을 만들어 주는 것.
 
 LSP (Liskov Substitution Principle): 자식 클래스는 부모 클래스를 대체 할 수 있어야한다. 즉, 자식 클래스는 부모 클래스의 속성, 기능들을 모두 가지고 있으며, 부모 클래스에 해당되는 속성, 기능들이 하나라도 불일치 되면 안되는 것이다.
 
-ISP (Interfaced Segregation Principle): 어떤 객체 내에 공통으로 분류 될수 있는 기능 들이 있는 경우, 그 기능들을 인터페이스로 묶어 분리하는 것.
+ISP (Interfaced Segregation Principle): 어떤 객체 내에 공통으로 분류 될수 있는 기능 들이 있는 경우, 그 기능들을 인터페이스로 묶어 분리하는 것. A -> B, A가 B에게 의존적임
 
 DIP (Dependancy Inversion Principle): 구현에 의존하기 보다 추상에 의존해야 한다. 필요한 경우를 제외하곤 구현 클래스를 이용하는 일이 없어야한다.
 
