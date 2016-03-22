@@ -1,0 +1,16 @@
+Eunho@Eunho-PC MINGW64 ~/Documents/ehk/code/j16/myrepo (master)
+$ javac -cp lib/aplu5.jar -d classes/ -sourcepath src/ src/com/j2/w3/j2_201511091_w3main.java
+
+Eunho@Eunho-PC MINGW64 ~/Documents/ehk/code/j16/myrepo (master)
+$ java -cp classes/\;lib/aplu5.jar com.j2.w3.j2_201511091_w3main
+B[0]=Adam
+B[1]=John
+B[2]=Jones
+B[3]=Skrien
+B[4]=Smith
+C[0]=1
+C[1]=2
+C[2]=3
+C[3]=4
+wt[0] = 10
+wt[1] = 20
