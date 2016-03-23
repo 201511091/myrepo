@@ -4,6 +4,19 @@ import com.sd.turtle.WeightTurtle;
 
 public class j2_201511091_w3main {
     public static void main(String[] args) {
+
+	Date d1 = new Date(1996, 02, 21);	
+	Date d2 = new Date(2016, 03, 02);
+	Date d3 = new Date(2000, 01, 01);
+	
+	Date[] A = {d1, d2, d3};
+	
+	Comparator dateComp = new DateComparator();
+	Sorter.sort(A, dateComp);
+	
+	for(int i = 0; i < A.length; i++)
+	    System.out.println("A["+i+"]="+A[i]);
+
         String[] B = {"John", "Adam", "Skrien", "Smith", "Jones"};
         Comparator stringComp = new StringComparator();
         Sorter.sort(B, stringComp);
@@ -26,6 +39,13 @@ public class j2_201511091_w3main {
         
         for (int i = 0;i < wt.length;i++)
           System.out.println("wt["+i+"] = "+wt[i].getWeight());
+
+	String[] D = {"John", "Adam", "Skrien", "Smith", "Jones"};
+	Comparator rComp = new ReverseComparator(stringComp);
+	Sorter.sort(D, rComp);
+
+        for(int i = 0; i < D.length; i++)
+            System.out.println("D["+i+"]="+D[i]);	
     }
 }
 
